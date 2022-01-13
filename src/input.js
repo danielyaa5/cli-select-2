@@ -124,11 +124,14 @@ export default class Input {
    * @param {object} key - object containing information about the pressed key
    */
   onKeyPress(string, key) {
+    const isUp = (key) => key.name === 'up' || key.name === 'k'
+    const isDown = (key) => key.name === 'down' || key.name === 'j'
+
     if (key) {
-      if (key.name === 'up' && this.selectedValue > 0) {
+      if (isUp(key) && this.selectedValue > 0) {
         this.selectedValue--;
         this.render();
-      } else if (key.name === 'down' && this.selectedValue + 1 < this.values.length) {
+      } else if (isDown(key) && this.selectedValue + 1 < this.values.length) {
         this.selectedValue++;
         this.render();
       } else if (key.name === 'return') {

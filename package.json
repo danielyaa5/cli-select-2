@@ -1,10 +1,10 @@
 {
-  "name": "cli-select",
-  "version": "1.1.2",
+  "name": "cli-select-2",
+  "version": "2.0.0",
   "description": "Simple and interactive solution to provide a list of selectable items on the command line",
-  "author": "Cyril Wanner <info@cyr.li>",
+  "author": "danielyaa5",
   "license": "MIT",
-  "repository": "cyrilwanner/cli-select",
+  "repository": "danielyaa5/cli-select-2",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
   "scripts": {

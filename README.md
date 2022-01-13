@@ -1,4 +1,4 @@
-<h1 align="center">▶️ 🔴 cli-select</h1>
+<h1 align="center">▶️ 🔴 cli-select-2</h1>
 
 <p align="center">
     <a href="https://www.npmjs.com/package/cli-select"><img src="https://img.shields.io/npm/v/cli-select.svg" alt="NPM"></a>
@@ -6,9 +6,12 @@
 </p>
 
 <p align="center">
-    Simple and interactive solution to provide a list of selectable items on the command line.
+    Fork of cli-select with some improvements. Simple and interactive solution to provide a list of selectable items on the command line.
     <img src="https://cyrilwanner.github.io/packages/cli-select/assets/preview.gif" alt="cli-select preview">
 </p>
+
+## Improvements for cli-select-2 vs cli-select
+Currently the only difference is that you can use k and j to move up and down
 
 > Note: cli-select does not produce colored output by default to keep the dependencies at a minimum. See the [examples](#examples) below on how to reproduce this preview.
 
@@ -23,20 +26,20 @@
 ## Installation
 
 ```
-npm install --save cli-select
+npm install --save cli-select-2
 ```
 
 ## Usage
 
 ```javascript
-const cliSelect = require('cli-select');
+const cliSelect = require('cli-select-2');
 
 cliSelect(options, callback);
 ```
 
 See the [configuration section](#configuration) for all available options.
 
-The select list gets immediately rendered when the function gets called and the user can then select an option with the `up` and `down` arrow keys. To confirm the selection, just press `enter`/`return`. It is also possible to cancel a selection with `ctrl+c` or `esc` but it is up to you how you want to handle the cancellation of a selection, the process won't be ended by default.
+The select list gets immediately rendered when the function gets called and the user can then select an option with the `up` and `down` arrow keys. You can also use k for up and j for down (VIM style). To confirm the selection, just press `enter`/`return`. It is also possible to cancel a selection with `ctrl+c` or `esc` but it is up to you how you want to handle the cancellation of a selection, the process won't be ended by default.
 
 cli-select supports both, a __callback__ function or a __Promise__ (if your node environment supports promises).
 
