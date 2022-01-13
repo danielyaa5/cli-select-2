@@ -11,7 +11,8 @@
 </p>
 
 ## Improvements for cli-select-2 vs cli-select
-Currently the only difference is that you can use k and j to move up and down
+- You can use k and j to move up and down
+- Did an npm audit to remove all security risks in the npm packages
 
 > Note: cli-select does not produce colored output by default to keep the dependencies at a minimum. See the [examples](#examples) below on how to reproduce this preview.
 
